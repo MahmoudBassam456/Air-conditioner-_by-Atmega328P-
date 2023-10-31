@@ -13,30 +13,30 @@
 #include "Application.h"
 #include "Ecal_layer/ecu_push_button/ecu_push_button.h"
 
-
-led_config led_1={.port_t=PORTB_INDEX,.pin_t=PIN_5,.led_status=HIGH};
- LOGIC_STATE var;
- uint8_t ret;
-button_config btn={
-    .button_pin=PIN_0,.button_port=PORTB_INDEX,.button_connection=BUTTON_ACTIVE_LOW
-};
+ segmnt_config_t seven_seg_1={.pin_[0].pin=PIN_0,.pin_[0].port=PORTB_INDEX,
+.pin_[1].pin=PIN_1,.pin_[1].port=PORTB_INDEX,
+ .pin_[2].pin=PIN_2,.pin_[2].port=PORTB_INDEX,
+ .pin_[3].pin=PIN_3,.pin_[3].port=PORTB_INDEX,
+ .pin_[4].pin=PIN_4,.pin_[4].port=PORTB_INDEX,
+ .pin_[5].pin=PIN_5,.pin_[5].port=PORTB_INDEX,
+ .pin_[6].pin=PIN_0,.pin_[6].port=PORTD_INDEX,
+ };
+void App_intialize(void);
+uint8_t ret;
 int main() {
-    uint8_t q;
-   
-     ret=led_intialize(&led_1); 
-   
-    ret=button_intialize(&btn);
-    while(1){
-        button_read_state(&btn,&var);
-        if(var==BUTTON_PRESSED)
-        {
-            ret=led_turn_on(&led_1);
-        }
-        else
-        {
-           ret=led_turn_off(&led_1); 
-        }
-    }
+  //led_config led={.pin_t=0,.port_t=0};
+intialize_seg_pins(&seven_seg_1);
+show_num(&seven_seg_1,8);
+   while(1){
+         
+   // led_turn_on(&led);
+       
+   } 
+  
+    
     return (EXIT_SUCCESS);
+}
+void App_intialize(void){
+
 }
 

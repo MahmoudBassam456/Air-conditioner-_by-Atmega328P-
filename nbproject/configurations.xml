@@ -5,6 +5,13 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="Ecal_layer" displayName="Ecal_layer" projectFiles="true">
+        <logicalFolder name="7_segment" displayName="7_segment" projectFiles="true">
+          <itemPath>Ecal_layer/7_segment/ecu_7_segment.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="DC_MOTOR" displayName="DC_MOTOR" projectFiles="true">
+          <itemPath>Ecal_layer/DC_MOTOR/ecu_dc_motor.h</itemPath>
+          <itemPath>Ecal_layer/DC_MOTOR/ecu_dc_motor_cfg.h</itemPath>
+        </logicalFolder>
         <logicalFolder name="ecu_led" displayName="ecu_led" projectFiles="true">
           <itemPath>Ecal_layer/ecu_led/ecu_led.h</itemPath>
           <itemPath>Ecal_layer/ecu_led/ecu_led_cfg.h</itemPath>
@@ -41,6 +48,12 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="Ecal_layer" displayName="Ecal_layer" projectFiles="true">
+        <logicalFolder name="7_segment" displayName="7_segment" projectFiles="true">
+          <itemPath>Ecal_layer/7_segment/ecu_7_segment.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="DC_MOTOR" displayName="DC_MOTOR" projectFiles="true">
+          <itemPath>Ecal_layer/DC_MOTOR/ecu_dc_motor.c</itemPath>
+        </logicalFolder>
         <logicalFolder name="ecu_led" displayName="ecu_led" projectFiles="true">
           <itemPath>Ecal_layer/ecu_led/ecu_led.c</itemPath>
         </logicalFolder>

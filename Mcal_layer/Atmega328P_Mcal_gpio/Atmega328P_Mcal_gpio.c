@@ -35,8 +35,7 @@ std_return_type gpio_pin_dirction_intialize( pin_config_t *pin_config,DIRCTION_S
                 break;
             case OUTPUT:
                pin_config->dirction=OUTPUT;
-               (data_dirction_reg[pin_config->port]->All_reg)=0x01;
-                SET_BIT((data_dirction_reg[pin_config->port]->All_reg),pin_config->pin);
+                 SET_BIT((data_dirction_reg[pin_config->port]->All_reg),pin_config->pin);
                 break;
             default:
                 ret=E_NOT_OK; ;
@@ -87,12 +86,10 @@ std_return_type gpio_pin_write_logic( pin_config_t *pin_config,LOGIC_STATE logic
         switch(logic_state)
         {
             case LOW:
-                pin_config->dirction=LOW;
-                CLEAR_BIT(port_reg[pin_config->port]->All_reg,pin_config->pin);
+               CLEAR_BIT(port_reg[pin_config->port]->All_reg,pin_config->pin);
                 break;
             case HIGH:
-                pin_config->dirction=HIGH;
-                SET_BIT(port_reg[pin_config->port]->All_reg,pin_config->pin);
+                 SET_BIT(port_reg[pin_config->port]->All_reg,pin_config->pin);
                 break;
             default:
                 ret=E_NOT_OK; ;

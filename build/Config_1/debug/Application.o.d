@@ -1,6 +1,5 @@
-build/Config_1/production/Application.o.d \
- build/Config_1/production/Application.o: Application.c Application.h \
- Ecal_layer/ecu_led/ecu_led.h \
+build/Config_1/debug/Application.o.d build/Config_1/debug/Application.o: \
+ Application.c Application.h Ecal_layer/ecu_led/ecu_led.h \
  Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.h \
  Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/../Device_config/Atmega328p_device_config.h \
  Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/../Device_config/../compiler.h \

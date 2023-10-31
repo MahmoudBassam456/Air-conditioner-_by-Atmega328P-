@@ -13,6 +13,7 @@
 #include "Ecal_layer/ecu_led/ecu_led.h"
 #include "Mcal_layer/std_libraries.h"
 #include "Ecal_layer/../Ecal_layer/ecu_led/ecu_led.h"
+#include "Ecal_layer/7_segment/ecu_7_segment.h"
 /*                     Segment:  user_defined_datatype                          */
 
                              /*Enum*/

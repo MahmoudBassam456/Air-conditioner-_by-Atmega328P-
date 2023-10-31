@@ -3,21 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.h</file>
             <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Application.c</file>
-            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Mcal_layer/std_libraries.h</file>
-            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.c</file>
-            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Mcal_layer/Device_config/Atmega328p_device_config.h</file>
-            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Mcal_layer/Atmega328p_mcal_std_types.h</file>
-            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Mcal_layer/compiler.h</file>
-            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Ecal_layer/ecu_led/ecu_led_cfg.h</file>
-            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Ecal_layer/ecu_push_button/ecu_push_button.h</file>
-            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Ecal_layer/ecu_led/ecu_led.c</file>
-            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Mcal_layer/Atmega328P_Mcal_gpio/hal_gpio_cfg.h</file>
-            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Mcal_layer/Device_config/Atmega328p_device_config.c</file>
-            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Application.h</file>
-            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Ecal_layer/ecu_led/ecu_led.h</file>
-            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Ecal_layer/ecu_push_button/ecu_push_button.c</file>
+            <file>file:/E:/Mahmoud%20Bassam/00_Embedded%20Systems%20Records/gIT/Air_cond/Ecal_layer/7_segment/ecu_7_segment.h</file>
         </group>
     </open-files>
 </project-private>

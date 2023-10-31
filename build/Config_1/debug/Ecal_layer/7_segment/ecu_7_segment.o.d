@@ -1,9 +1,10 @@
-build/Config_1/production/Application.o.d \
- build/Config_1/production/Application.o: Application.c Application.h \
- Ecal_layer/ecu_led/ecu_led.h \
- Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.h \
- Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/../Device_config/Atmega328p_device_config.h \
- Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/../Device_config/../compiler.h \
+build/Config_1/debug/Ecal_layer/7_segment/ecu_7_segment.o.d \
+ build/Config_1/debug/Ecal_layer/7_segment/ecu_7_segment.o: \
+ Ecal_layer/7_segment/ecu_7_segment.c \
+ Ecal_layer/7_segment/ecu_7_segment.h \
+ Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.h \
+ Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/../Device_config/Atmega328p_device_config.h \
+ Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/../Device_config/../compiler.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -19,31 +20,22 @@ build/Config_1/production/Application.o.d \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
- Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/../Atmega328p_mcal_std_types.h \
- Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/../compiler.h \
- Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/../../Mcal_layer/std_libraries.h \
+ Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/../Atmega328p_mcal_std_types.h \
+ Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/../compiler.h \
+ Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/../../Mcal_layer/std_libraries.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\4.9.2\include\stdarg.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\4.9.2\include\stddef.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h \
- Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/hal_gpio_cfg.h \
- Ecal_layer/ecu_led/ecu_led_cfg.h Mcal_layer/std_libraries.h \
- Ecal_layer/../Ecal_layer/ecu_led/ecu_led.h \
- Ecal_layer/7_segment/ecu_7_segment.h \
- Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.h \
- Ecal_layer/ecu_push_button/ecu_push_button.h \
- Ecal_layer/ecu_push_button/../../Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.h \
- Ecal_layer/ecu_push_button/ecu_button_cfg.h
+ Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/hal_gpio_cfg.h
 
-Application.h:
+Ecal_layer/7_segment/ecu_7_segment.h:
 
-Ecal_layer/ecu_led/ecu_led.h:
+Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.h:
 
-Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.h:
+Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/../Device_config/Atmega328p_device_config.h:
 
-Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/../Device_config/Atmega328p_device_config.h:
-
-Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/../Device_config/../compiler.h:
+Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/../Device_config/../compiler.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -75,11 +67,11 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
 
-Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/../Atmega328p_mcal_std_types.h:
+Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/../Atmega328p_mcal_std_types.h:
 
-Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/../compiler.h:
+Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/../compiler.h:
 
-Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/../../Mcal_layer/std_libraries.h:
+Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/../../Mcal_layer/std_libraries.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h:
 
@@ -89,20 +81,4 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h:
 
-Ecal_layer/ecu_led/../../Mcal_layer/Atmega328P_Mcal_gpio/hal_gpio_cfg.h:
-
-Ecal_layer/ecu_led/ecu_led_cfg.h:
-
-Mcal_layer/std_libraries.h:
-
-Ecal_layer/../Ecal_layer/ecu_led/ecu_led.h:
-
-Ecal_layer/7_segment/ecu_7_segment.h:
-
-Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.h:
-
-Ecal_layer/ecu_push_button/ecu_push_button.h:
-
-Ecal_layer/ecu_push_button/../../Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.h:
-
-Ecal_layer/ecu_push_button/ecu_button_cfg.h:
+Ecal_layer/7_segment/../../Mcal_layer/Atmega328P_Mcal_gpio/hal_gpio_cfg.h:
