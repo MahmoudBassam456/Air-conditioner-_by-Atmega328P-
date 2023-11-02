@@ -34,7 +34,7 @@ typedef struct{
 
 /*                          Segment:Macros Declerations                                          */
 
-#define SAMPLE_PRESED  19
+#define SAMPLE_PRESED  10
 /*                          Segment:Macros Like Functions                                          */
 
 

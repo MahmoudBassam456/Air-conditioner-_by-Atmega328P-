@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=Ecal_layer/ecu_led/ecu_led.c Ecal_layer/ecu_push_button/ecu_push_button.c Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.c Mcal_layer/Device_config/Atmega328p_device_config.c Application.c Ecal_layer/DC_MOTOR/ecu_dc_motor.c Ecal_layer/7_segment/ecu_7_segment.c
+SOURCEFILES_QUOTED_IF_SPACED=Ecal_layer/7_segment/ecu_7_segment.c Ecal_layer/DC_MOTOR/ecu_dc_motor.c Ecal_layer/ecu_led/ecu_led.c Ecal_layer/ecu_push_button/ecu_push_button.c Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.c Mcal_layer/Device_config/Atmega328p_device_config.c Application.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Ecal_layer/ecu_led/ecu_led.o ${OBJECTDIR}/Ecal_layer/ecu_push_button/ecu_push_button.o ${OBJECTDIR}/Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.o ${OBJECTDIR}/Mcal_layer/Device_config/Atmega328p_device_config.o ${OBJECTDIR}/Application.o ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/Ecal_layer/ecu_led/ecu_led.o.d ${OBJECTDIR}/Ecal_layer/ecu_push_button/ecu_push_button.o.d ${OBJECTDIR}/Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.o.d ${OBJECTDIR}/Mcal_layer/Device_config/Atmega328p_device_config.o.d ${OBJECTDIR}/Application.o.d ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o.d ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o ${OBJECTDIR}/Ecal_layer/ecu_led/ecu_led.o ${OBJECTDIR}/Ecal_layer/ecu_push_button/ecu_push_button.o ${OBJECTDIR}/Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.o ${OBJECTDIR}/Mcal_layer/Device_config/Atmega328p_device_config.o ${OBJECTDIR}/Application.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o.d ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o.d ${OBJECTDIR}/Ecal_layer/ecu_led/ecu_led.o.d ${OBJECTDIR}/Ecal_layer/ecu_push_button/ecu_push_button.o.d ${OBJECTDIR}/Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.o.d ${OBJECTDIR}/Mcal_layer/Device_config/Atmega328p_device_config.o.d ${OBJECTDIR}/Application.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/Ecal_layer/ecu_led/ecu_led.o ${OBJECTDIR}/Ecal_layer/ecu_push_button/ecu_push_button.o ${OBJECTDIR}/Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.o ${OBJECTDIR}/Mcal_layer/Device_config/Atmega328p_device_config.o ${OBJECTDIR}/Application.o ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o
+OBJECTFILES=${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o ${OBJECTDIR}/Ecal_layer/ecu_led/ecu_led.o ${OBJECTDIR}/Ecal_layer/ecu_push_button/ecu_push_button.o ${OBJECTDIR}/Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.o ${OBJECTDIR}/Mcal_layer/Device_config/Atmega328p_device_config.o ${OBJECTDIR}/Application.o
 
 # Source Files
-SOURCEFILES=Ecal_layer/ecu_led/ecu_led.c Ecal_layer/ecu_push_button/ecu_push_button.c Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.c Mcal_layer/Device_config/Atmega328p_device_config.c Application.c Ecal_layer/DC_MOTOR/ecu_dc_motor.c Ecal_layer/7_segment/ecu_7_segment.c
+SOURCEFILES=Ecal_layer/7_segment/ecu_7_segment.c Ecal_layer/DC_MOTOR/ecu_dc_motor.c Ecal_layer/ecu_led/ecu_led.c Ecal_layer/ecu_push_button/ecu_push_button.c Mcal_layer/Atmega328P_Mcal_gpio/Atmega328P_Mcal_gpio.c Mcal_layer/Device_config/Atmega328p_device_config.c Application.c
 
 # Pack Options 
 PACK_COMPILER_OPTIONS=-I "${DFP_DIR}/include"
@@ -104,6 +104,18 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
+${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o: Ecal_layer/7_segment/ecu_7_segment.c  .generated_files/flags/Config_1/a42ec8fdd09e9a2332d37485e5b306c4edbb7d97 .generated_files/flags/Config_1/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/Ecal_layer/7_segment" 
+	@${RM} ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o.d 
+	@${RM} ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o 
+	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega328 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS} -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o.d" -MT "${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o.d" -MT ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o  -o ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o Ecal_layer/7_segment/ecu_7_segment.c  -DXPRJ_Config_1=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o: Ecal_layer/DC_MOTOR/ecu_dc_motor.c  .generated_files/flags/Config_1/6efb84aaaecce2f1e0c0f411a1cd45970d4fdb40 .generated_files/flags/Config_1/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/Ecal_layer/DC_MOTOR" 
+	@${RM} ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o.d 
+	@${RM} ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o 
+	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega328 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS} -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o.d" -MT "${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o.d" -MT ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o  -o ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o Ecal_layer/DC_MOTOR/ecu_dc_motor.c  -DXPRJ_Config_1=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
 ${OBJECTDIR}/Ecal_layer/ecu_led/ecu_led.o: Ecal_layer/ecu_led/ecu_led.c  .generated_files/flags/Config_1/dd0565fae220987b8e56cdd52f66d9c80a034532 .generated_files/flags/Config_1/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/Ecal_layer/ecu_led" 
 	@${RM} ${OBJECTDIR}/Ecal_layer/ecu_led/ecu_led.o.d 
@@ -134,19 +146,19 @@ ${OBJECTDIR}/Application.o: Application.c  .generated_files/flags/Config_1/f3993
 	@${RM} ${OBJECTDIR}/Application.o 
 	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega328 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS} -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/Application.o.d" -MT "${OBJECTDIR}/Application.o.d" -MT ${OBJECTDIR}/Application.o  -o ${OBJECTDIR}/Application.o Application.c  -DXPRJ_Config_1=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o: Ecal_layer/DC_MOTOR/ecu_dc_motor.c  .generated_files/flags/Config_1/6efb84aaaecce2f1e0c0f411a1cd45970d4fdb40 .generated_files/flags/Config_1/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/Ecal_layer/DC_MOTOR" 
-	@${RM} ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o.d 
-	@${RM} ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o 
-	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega328 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS} -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o.d" -MT "${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o.d" -MT ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o  -o ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o Ecal_layer/DC_MOTOR/ecu_dc_motor.c  -DXPRJ_Config_1=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o: Ecal_layer/7_segment/ecu_7_segment.c  .generated_files/flags/Config_1/a42ec8fdd09e9a2332d37485e5b306c4edbb7d97 .generated_files/flags/Config_1/da39a3ee5e6b4b0d3255bfef95601890afd80709
+else
+${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o: Ecal_layer/7_segment/ecu_7_segment.c  .generated_files/flags/Config_1/ccb403a2745a62f3fd87ccdbcfd5974f69f93df4 .generated_files/flags/Config_1/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/Ecal_layer/7_segment" 
 	@${RM} ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o.d 
 	@${RM} ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o 
-	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega328 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS} -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o.d" -MT "${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o.d" -MT ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o  -o ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o Ecal_layer/7_segment/ecu_7_segment.c  -DXPRJ_Config_1=$(CND_CONF)  $(COMPARISON_BUILD) 
+	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega328 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS}  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o.d" -MT "${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o.d" -MT ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o  -o ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o Ecal_layer/7_segment/ecu_7_segment.c  -DXPRJ_Config_1=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
-else
+${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o: Ecal_layer/DC_MOTOR/ecu_dc_motor.c  .generated_files/flags/Config_1/ef3110af93f3e29f36d5fbd1f6aec327733e5d79 .generated_files/flags/Config_1/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/Ecal_layer/DC_MOTOR" 
+	@${RM} ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o.d 
+	@${RM} ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o 
+	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega328 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS}  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o.d" -MT "${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o.d" -MT ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o  -o ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o Ecal_layer/DC_MOTOR/ecu_dc_motor.c  -DXPRJ_Config_1=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
 ${OBJECTDIR}/Ecal_layer/ecu_led/ecu_led.o: Ecal_layer/ecu_led/ecu_led.c  .generated_files/flags/Config_1/d2a33812582f7ee5f135ed12a2bdd3c91c24d905 .generated_files/flags/Config_1/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/Ecal_layer/ecu_led" 
 	@${RM} ${OBJECTDIR}/Ecal_layer/ecu_led/ecu_led.o.d 
@@ -176,18 +188,6 @@ ${OBJECTDIR}/Application.o: Application.c  .generated_files/flags/Config_1/d787a
 	@${RM} ${OBJECTDIR}/Application.o.d 
 	@${RM} ${OBJECTDIR}/Application.o 
 	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega328 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS}  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/Application.o.d" -MT "${OBJECTDIR}/Application.o.d" -MT ${OBJECTDIR}/Application.o  -o ${OBJECTDIR}/Application.o Application.c  -DXPRJ_Config_1=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o: Ecal_layer/DC_MOTOR/ecu_dc_motor.c  .generated_files/flags/Config_1/ef3110af93f3e29f36d5fbd1f6aec327733e5d79 .generated_files/flags/Config_1/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/Ecal_layer/DC_MOTOR" 
-	@${RM} ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o.d 
-	@${RM} ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o 
-	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega328 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS}  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o.d" -MT "${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o.d" -MT ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o  -o ${OBJECTDIR}/Ecal_layer/DC_MOTOR/ecu_dc_motor.o Ecal_layer/DC_MOTOR/ecu_dc_motor.c  -DXPRJ_Config_1=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o: Ecal_layer/7_segment/ecu_7_segment.c  .generated_files/flags/Config_1/ccb403a2745a62f3fd87ccdbcfd5974f69f93df4 .generated_files/flags/Config_1/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/Ecal_layer/7_segment" 
-	@${RM} ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o.d 
-	@${RM} ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o 
-	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega328 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS}  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o.d" -MT "${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o.d" -MT ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o  -o ${OBJECTDIR}/Ecal_layer/7_segment/ecu_7_segment.o Ecal_layer/7_segment/ecu_7_segment.c  -DXPRJ_Config_1=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
 endif
 

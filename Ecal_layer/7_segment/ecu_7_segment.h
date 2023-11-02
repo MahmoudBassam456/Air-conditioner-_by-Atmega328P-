@@ -14,8 +14,9 @@
 /*                     Segment:  user_defined_datatype                          */
 /*Enum*/
    typedef enum{
-     commmen_cathod=0,
-     commen_Anode
+     COMMEN_CATHOD=0,
+     COMMEN_ANODE,
+     DECODER_BCD      
    }segmnt_conection; 
    
    typedef enum{
@@ -28,7 +29,12 @@
        PIN_G,
        PIN_DP    
    }segmnt_pin;
-
+ typedef enum{
+       PIN_A_bcd=0,
+       PIN_B_bcd,
+       PIN_C_bcd,
+       PIN_D_bcd, 
+   }bcd_pin;
 //structures 
 
     
@@ -37,6 +43,7 @@
 
 typedef struct{
     pin_config_t pin_[8] ;
+   segmnt_conection seg_type;
    }segmnt_config_t;
 
 

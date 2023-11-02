@@ -87,9 +87,11 @@ std_return_type gpio_pin_write_logic( pin_config_t *pin_config,LOGIC_STATE logic
         {
             case LOW:
                CLEAR_BIT(port_reg[pin_config->port]->All_reg,pin_config->pin);
+               ;
                 break;
             case HIGH:
                  SET_BIT(port_reg[pin_config->port]->All_reg,pin_config->pin);
+                 ;
                 break;
             default:
                 ret=E_NOT_OK; ;
@@ -117,7 +119,9 @@ std_return_type gpio_pin_read_logic(const pin_config_t *pin_config,LOGIC_STATE *
        ret=E_NOT_OK;
     }
     else{
+        ;
     *logic_state=READ_BIT(pin_reg[pin_config->port]->All_reg,pin_config->pin);
+    ;
     }
     return ret;
 }
